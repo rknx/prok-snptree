@@ -1,0 +1,41 @@
+#!/bin/sh
+#SBATCH --account <qos>
+#SBATCH --qos <qos>
+#SBATCH --job-name snptree
+#SBATCH --mail-type END,FAIL
+#SBATCH --mail-user <email@address>
+#SBATCH --nodes 1
+#SBATCH --ntasks 1
+#SBATCH --cpus-per-task=17
+#SBATCH --mem=49g
+#SBATCH --time=20:00:00
+#SBATCH --output=snptree.log
+
+date
+
+## Prepare environment --------------------------------------------------
+
+# Load required modules
+module load parallel fastqc multiqc trim_galore spades bowtie2 samtools pilon emboss prokka patric bwa gatk snpeff
+
+# Reference genome fasta (compressed gz) (or manually extract to refs/genome.fna)
+export refgenome="<link for reference genome>"
+
+# Annotation gtf for reference genome (compressed gz) (or manually extract to refs/genes.gtf)
+export refannotation="<link for reference annotation>"
+
+# Filtration parameters
+export minQD=5
+export minDP=5
+export maxRDP=1
+export minADP=5
+
+# Number of CPU and memory for parallel processing
+export ncpu=16
+export nmem=48
+
+# Number of bootstraps for phylogenetic tree
+export nboot=100
+
+## Run the analysis ----------------------------------------------------
+prok-snptree.sh $refgenome $refannotation $ncpu $nmem $minQD $minDP $maxRDP $minADP $nboot
