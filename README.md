@@ -1,1 +1,1 @@
-# prok-variants
+# prok-snptree
