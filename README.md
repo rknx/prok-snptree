@@ -5,7 +5,16 @@
 Prok-SNPTree is a pipeline to generate phylogenetic tree using core substitutions between reference genome and whole genomes Illumina sequencing.  
 Prok-SNPTree was originally designed and optimized for small prokaryotic genomes, but can perform reasonably well with larger genomes up to 100 Mb.
 
-Prok-SNPtree comes with a helper file for providing required input info. The sbatch has preset information for running through SLURM scheduler, but should perform without SLURM as long as the following executables are available in the ENV.
+Prok-SNPtree comes with a helper file for providing required input info. The sbatch has preset information for running through SLURM scheduler, but should be able to run without SLURM. 
+
+### Installation
+Just place helper batch file and the script in working directory. Make the script executable.
+```
+chmod +x prok-snptree.sh
+```
+
+### Dependencies
+The following tools must be installed and thier executables must be available in the ENV.
 
 | Function | Tools/scripts |
 | --- | --- |
@@ -46,7 +55,12 @@ Number of CPUs and memory (overall) to use. If number of CPU is less than 8, onl
 5. **nboot** (Bootstrap)  
 Number of bootstraps to be used while preparing the phylogenetic tree with RAxML.
 
-### Optimization
+### Running the program
+
+If SLURM is available, edit the resource parameters in sbatch file and run as `sbatch slurm.batch`.  
+If running without SLURM, run as `bash slurm.batch`. This has not been throughly tested, and is not officially supported in the current version.
+
+### Optimizations
 The pipeline is written so as to enable resuming or rerunning. The main output files are name systematically and are used as checkpoints.  
 Some examples:
 - Trimming: non-empty `\<sample>.og` files in **fastq** subdirectory.
