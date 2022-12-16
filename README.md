@@ -14,7 +14,7 @@ chmod +x prok-snptree.sh
 ```
 
 ### Dependencies
-The following tools must be installed and thier executables must be available in the ENV.
+The following tools must be installed and their executables must be available in the ENV.
 
 | Function | Tools/scripts |
 | --- | --- |
