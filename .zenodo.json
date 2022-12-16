@@ -1,0 +1,32 @@
+{
+    "language": "eng", 
+    "license": "CC-BY-3.0-US", 
+    "title": "rknx/Prok-SNPTree: Phylogenetic Tree from Next-gen Sequencing of Prokaryotes", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/rknx/prok-snptree/tree/v0.1b", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.7444859", 
+            "relation": "isVersionOf"
+        }
+    ], 
+    "version": "v0.1b", 
+    "upload_type": "software", 
+    "keywords": [
+        "Phylogenetics", 
+        "Bacteria"
+    ], 
+    "publication_date": "2022-12-16", 
+    "creators": [
+        {
+            "affiliation": "University of Florida", 
+            "name": "Anuj Sharma"
+        }
+    ], 
+    "access_right": "open", 
+    "description": "<p>Prok-SNPTree is a pipeline to generate phylogenetic tree using core substitutions between reference genome and whole genomes Illumina sequencing.</p>"
+}
