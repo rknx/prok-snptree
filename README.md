@@ -75,5 +75,5 @@ Some examples:
 
 ### Citation
 A peer-reviewed paper is pending publication. Please cite the zenodo record at the moment as follows:  
-> Sharma A. 2022. rknx/Prok-SNPTree: Phylogenetic Tree from Next-gen Sequencing of Prokaryotes (v0.1b). Zenodo. https://doi.org/10.5281/zenodo.7444860
+> Sharma A. 2022. rknx/Prok-SNPTree: Phylogenetic Tree from Next-gen Sequencing of Prokaryotes (v0.1b). Zenodo. https://doi.org/10.5281/zenodo.7445133
 
