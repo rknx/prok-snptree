@@ -67,9 +67,9 @@ Some examples:
 - Alignment: non-empty `.bam` file in **align/\<sample>** subdirectory.
 - Variant calling: non-empty `.vcf` file in **variants/\<sample>** subdirectory.
 
-> If some samples fail, just rerun the pipeline after amking changes with the inputs. Completed samples with valid outputs are not processed again.  
+> If some samples fail, just rerun the pipeline after making changes with the inputs. Completed samples with valid outputs are not processed again.  
 
-> If the pipeline exits in middle of operation, just rerun, and the pipeline will pick up from last complete operation.
+> If the pipeline exits in the middle of operation, just rerun, and the pipeline will pick up from last complete operation.
 
 > If you add new samples, just rerun the pipeline to process it.
 
