@@ -1,0 +1,10 @@
+cff-version: 0.2b
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Sharma
+    given-names: Anuj
+    orcid: https://orcid.org/0000-0000-0000-0000
+title: rknx/Prok-SNPTree: Phylogenetic Tree from Next-gen Sequencing of Prokaryotes
+doi: https://doi.org/10.5281/zenodo.7445133
+version: v0.2b
+date-released: 2022-12-16
